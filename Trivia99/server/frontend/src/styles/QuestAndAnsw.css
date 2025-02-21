@@ -1,0 +1,49 @@
+/**
+ * Style for the QuestAndAnswer component
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+.answers-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 2px;
+}
+
+@media screen and (max-width: 700px) {
+    .answers-grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+.answer-cell {
+    border: 1px;
+    border-style: solid;
+    padding: 10px;
+    background-color: var(--white-orange);
+    text-align: center;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.answer-cell:disabled {
+    text-decoration: line-through;
+}
+
+.answer-cell:hover {
+    background-color: var(--very-light-orange);
+    cursor: pointer;
+}
+
+.answer-cell:disabled:hover {
+    background-color: var(--white-orange);
+    cursor: not-allowed;
+}
+
+.question-text {
+    text-align: center;
+}

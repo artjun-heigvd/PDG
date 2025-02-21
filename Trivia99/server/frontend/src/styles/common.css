@@ -1,0 +1,113 @@
+/**
+ * Style common at the whole app
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+:root {
+    --strong-orange: #FF8C42;
+    --light-orange: #FCAF58;
+    --very-light-orange: #F9C784;
+    --white-orange: #f9efe6;
+    --grad-blue: #4E598C;
+    --onyx: #353839;
+    --light-onyx: #8E9090;
+
+    --easy: #5Cb44F;
+    --medium: #2E7AB4;
+    --hard: #934EA6;
+    --attack: #D42433;
+}
+
+.content-column-box {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content-row-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.spaced {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.background {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--grad-blue), var(--strong-orange));
+}
+
+.rounded-box {
+    border-radius: 9px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    background-color: white;
+}
+
+.shadow {
+    box-shadow: 20px 25px 4px #00000040;
+}
+
+.padding-20px {
+    padding: 20px;
+}
+
+.scroll-box{
+    scroll-behavior: smooth;
+}
+
+.orange-button {
+    height: 50px;
+    width: 240px;
+    background-color: var(--light-orange);
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+}
+
+.orange-button:disabled {
+    background-color: #fcad599a;
+}
+
+.gap-in-button {
+    gap: 5px;
+}
+
+.gap-20px {
+    gap: 20px;
+}
+
+.orange-border {
+    border: 8px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: var(--strong-orange);
+    margin: 2px;
+}
+
+.text {
+    color: var(--onyx);
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange-fade {
+    background-image: linear-gradient(var(--light-orange), white, var(--light-orange));
+}
+
+.centered {
+    text-align: center;
+}

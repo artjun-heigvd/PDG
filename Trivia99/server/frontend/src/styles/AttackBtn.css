@@ -1,0 +1,24 @@
+/**
+ * Style for the attack button component
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+#attack-button {
+    padding: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    font-weight: bolder;
+    color: white;
+    background-color: var(--attack);
+    cursor: pointer;
+    width: 100%;
+}
+
+#attack-button:disabled {
+    cursor: not-allowed;
+    background-color: #91474d;
+    color: grey;
+}

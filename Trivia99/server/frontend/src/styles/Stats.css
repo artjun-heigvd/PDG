@@ -1,0 +1,31 @@
+/**
+ * Style for the Stats component
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+#flame-img {
+    height: 50px;
+    width: 40px;
+}
+
+.stat-container {
+    background-color: var(--white-orange);
+    justify-content : center;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+

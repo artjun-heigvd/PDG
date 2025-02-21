@@ -1,0 +1,38 @@
+/**
+ * Style for the game page
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+@media screen and (max-width: 700px) {
+    .switch-vertical {
+        flex-direction: column;
+    }
+
+    .col1 {
+        order: 2;
+    }
+
+    .col2 {
+        order: 1;
+    }
+
+    .col3 {
+        order: 3;
+    }
+
+    .game-container {
+        min-width: 100%;
+    }
+}
+
+.main-container {
+    height: 85vh;
+    width: 95vw;
+}
+
+.game-container{
+    min-width: 70%;
+}

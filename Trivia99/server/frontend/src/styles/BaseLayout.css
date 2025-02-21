@@ -1,0 +1,19 @@
+/**
+ * Style for the BaseLayout component
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+.logo {
+    align-self: center;
+    height: 10vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}

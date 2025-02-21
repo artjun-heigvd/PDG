@@ -1,0 +1,41 @@
+/**
+ * Style for the Queue component
+ * 
+ * @version 05.09.2024
+ * 
+ * @author Arthur Junod, Guillaume Dunant, Valentin Bonzon, Edwin Haeffner
+*/
+
+.square {
+    border-radius: 20px;
+    min-height: 98%;
+    flex-basis: 14%;
+    margin: 1px;
+}
+
+.stack-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    min-height: 80px;
+
+    background-color: var(--white-orange);
+}
+
+.attack {
+    background-color: var(--attack);
+}
+
+.medium {
+    background-color: var(--medium)
+}
+
+.easy {
+    background-color: var(--easy);
+}
+
+.hard {
+    background-color: var(--hard);
+}

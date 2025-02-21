@@ -1,0 +1,32 @@
+import { Question } from "./question";
+import { QuestionToSend } from "./questionToSend";
+import { QuestionInQueue } from "./questionInQueue";
+import { ConfigService } from "@nestjs/config";
+export declare class QuestionManager {
+    private configService;
+    private qPool;
+    private QUESTION_MIN;
+    private Q_FETCH_SIZE;
+    private HARD_Q;
+    private MEDIUM_Q;
+    private API_URL;
+    easy_questions: Question[];
+    medium_questions: Question[];
+    hard_questions: Question[];
+    isFetching: boolean;
+    isFetchingEasy: boolean;
+    isFetchingMedium: boolean;
+    isFetchingHard: boolean;
+    private eventEmitter;
+    constructor(configService: ConfigService);
+    initializeQuestions(): Promise<void>;
+    waitForEasyQuestionsToBeFetched(): Promise<void>;
+    waitForMediumQuestionsToBeFetched(): Promise<void>;
+    waitForHardQuestionsToBeFetched(): Promise<void>;
+    waitForQuestionsToBeFetched(): Promise<void>;
+    getUnusedQuestions(): number;
+    check(q: QuestionInQueue, answer: number): boolean;
+    get(q: QuestionInQueue): QuestionToSend;
+    newQuestion(isAttack: boolean): Promise<QuestionInQueue>;
+    private fetchQuestions;
+}
